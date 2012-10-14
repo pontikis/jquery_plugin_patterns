@@ -42,7 +42,7 @@
                 validate_input(container_id);
 
                 // bind events
-                elem.unbind("onCustomEvent1").bind("onCustomEvent1", elem.myPlugin('getOption', 'onCustomEvent1'));
+                elem.unbind("onCustomEvent1").bind("onCustomEvent1", settings.onCustomEvent1);
 
 
             });
