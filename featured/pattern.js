@@ -25,6 +25,7 @@
  * @memberOf $
  */
 
+/** the foolowing is OPTIONAL in case private methods will be documented  */
 /**
  * Pseudo-Namespace containing private methods (for documentation purposes)
  * @name _private_methods
@@ -79,14 +80,13 @@
          * @return {Object}
          */
         getDefaults: function() {
-            var defaults = {
+            return {
                 opt1: 1,
                 opt2: 'opt2_value',
 
                 onCustomEvent1: function() {
                 }
             };
-            return defaults;
         },
 
         /**
@@ -113,9 +113,9 @@
         /**
          * Set option
          * @example $(element).myPlugin('setOption', 'oprion_name',  'oprion_value',  reinit);
-         * @param opt string option names
+         * @param opt {string} option names
          * @param val
-         * @param reinit boolean
+         * @param reinit {boolean}
          */
         setOption: function(opt, val, reinit) {
             var elem = this;
@@ -141,6 +141,7 @@
     };
 
     /* private methods ------------------------------------------------------ */
+    /** the foolowing is OPTIONAL in case private methods will be documented  */
 
     /**
      * @lends _private_methods
