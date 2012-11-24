@@ -1,8 +1,34 @@
 /**
- * jquery plugin pattern (featured)
- * Copyright 2012 Christos Pontikis http://pontikis.net
- * Project page https://github.com/pontikis/jquery_plugin_patterns
- * License MIT
+ * @fileOverview jquery plugin pattern (featured)
+ *               <p>License MIT
+ *               <br />Copyright 2012 Christos Pontikis <a href="http://pontikis.net">http://pontikis.net</a>
+ *               <br />Project page <a href="https://github.com/pontikis/jquery_plugin_patterns">https://github.com/pontikis/jquery_plugin_patterns</a>
+ * @version 1.00
+ * @author Christos Pontikis http://pontikis.net
+ * @requires jquery
+ */
+
+/**
+ * See <a href="http://jquery.com">http://jquery.com</a>.
+ * @name $
+ * @class
+ * See the jQuery Library  (<a href="http://jquery.com">http://jquery.com</a>) for full details.  This just
+ * documents the function and classes that are added to jQuery by this plug-in.
+ */
+
+/**
+ * See <a href="http://jquery.com">http://jquery.com</a>
+ * @name fn
+ * @class
+ * See the jQuery Library  (<a href="http://jquery.com">http://jquery.com</a>) for full details.  This just
+ * documents the function and classes that are added to jQuery by this plug-in.
+ * @memberOf $
+ */
+
+/**
+ * Pseudo-Namespace containing private methods (for documentation purposes)
+ * @name _private_methods
+ * @namespace
  */
 "use strict";
 (function($) {
@@ -13,9 +39,7 @@
     var methods = {
 
         /**
-         * @constructor
-         * @param options
-         * @return {*}
+         * @lends $.fn.myPlugin
          */
         init: function(options) {
 
@@ -51,7 +75,7 @@
 
         /**
          * Get default values
-         * Usage: $(element).myPlugin('getDefaults');
+         * @example $(element).myPlugin('getDefaults');
          * @return {Object}
          */
         getDefaults: function() {
@@ -67,7 +91,7 @@
 
         /**
          * Get any option set to plugin using its name (as string)
-         * Usage: $(element).myPlugin('getOption', some_option);
+         * @example $(element).myPlugin('getOption', some_option);
          * @param opt
          * @return {*}
          */
@@ -78,7 +102,7 @@
 
         /**
          * Get all options
-         * Usage: $(element).myPlugin('getAllOptions');
+         * @example $(element).myPlugin('getAllOptions');
          * @return {*}
          */
         getAllOptions: function() {
@@ -88,10 +112,10 @@
 
         /**
          * Set option
-         * Usage: $(element).myPlugin('setOption', 'oprion_name',  'oprion_value',  reinit);
-         * @param opt
+         * @example $(element).myPlugin('setOption', 'oprion_name',  'oprion_value',  reinit);
+         * @param opt string option names
          * @param val
-         * @param reinit
+         * @param reinit boolean
          */
         setOption: function(opt, val, reinit) {
             var elem = this;
@@ -103,7 +127,7 @@
 
         /**
          * Destroy plugin
-         * Usage: $(element).myPlugin('destroy');
+         * @example $(element).myPlugin('destroy');
          * @param options
          * @return {*|jQuery}
          */
@@ -119,14 +143,23 @@
     /* private methods ------------------------------------------------------ */
 
     /**
+     * @lends _private_methods
+     */
+
+    /**
      * Validate input values
      * @param container_id
      */
     var validate_input = function(container_id) {
+        // your code here (OPTIONAL)
+    };
 
-    }
-
-
+    /**
+     * myPlugin - short description.
+     *
+     * @class myPlugin
+     * @memberOf $.fn
+     */
     $.fn.myPlugin = function(method) {
 
         // OPTIONAL
