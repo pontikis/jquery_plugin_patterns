@@ -128,10 +128,9 @@
         /**
          * Destroy plugin
          * @example $(element).myPlugin('destroy');
-         * @param options
          * @return {*|jQuery}
          */
-        destroy: function(options) {
+        destroy: function() {
             return $(this).each(function() {
                 var $this = $(this);
 
