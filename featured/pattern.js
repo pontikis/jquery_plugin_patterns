@@ -112,7 +112,7 @@
 
         /**
          * Set option
-         * @example $(element).myPlugin('setOption', 'oprion_name',  'oprion_value',  reinit);
+         * @example $(element).myPlugin('setOption', 'option_name',  'option_value',  reinit);
          * @param opt {string} option names
          * @param val
          * @param reinit {boolean}
@@ -164,7 +164,7 @@
 
         // OPTIONAL
         if(this.size() != 1) {
-            var err_msg = 'You must use this plugin with a unique element (at once)';
+            var err_msg = 'You must use this plugin (' + pluginName + ') with a unique element (at once)';
             this.html('<span style="color: red;">' + 'ERROR: ' + err_msg + '</span>');
             $.error(err_msg);
         }
