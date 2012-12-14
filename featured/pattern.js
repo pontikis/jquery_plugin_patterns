@@ -126,6 +126,16 @@
         },
 
         /**
+         * Refresh plugin
+         * @example $(element).myPlugin('refresh');
+         * @return {*|jQuery}
+         */
+        refresh: function() {
+            var elem = this;
+            elem.myPlugin();
+        },
+
+        /**
          * Destroy plugin
          * @example $(element).myPlugin('destroy');
          * @return {*|jQuery}
