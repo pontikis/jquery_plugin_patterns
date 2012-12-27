@@ -92,7 +92,7 @@
         /**
          * Get any option set to plugin using its name (as string)
          * @example $(element).myPlugin('getOption', some_option);
-         * @param opt
+         * @param {String} opt
          * @return {*}
          */
         getOption: function(opt) {
@@ -113,9 +113,9 @@
         /**
          * Set option
          * @example $(element).myPlugin('setOption', 'option_name',  'option_value',  reinit);
-         * @param opt {string} option names
+         * @param {String} opt option names
          * @param val
-         * @param reinit {boolean}
+         * @param {Boolean} reinit
          */
         setOption: function(opt, val, reinit) {
             var elem = this;
