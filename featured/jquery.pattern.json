@@ -1,0 +1,37 @@
+{
+    "name": "PLUGIN",
+    "version": "1.0.0",
+    "title": "PLUGIN",
+    "author": {
+        "name": "Author Name",
+        "url": "http://someurl.com"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://raw.github.com/user/PLUGIN/master/MIT_LICENSE"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">=1.6",
+        "jquery-ui": ">=1.8",
+        "moment.js": "1.7.2"
+    },
+    "description": "jquery plugin .....",
+    "homepage": "https://github.com/user/PLUGIN",
+    "docs": "http://someurl.com/PLUGIN/docs",
+    "demo": "http://someurl.com/PLUGIN/demo",
+    "download": "https://github.com/user/PLUGIN/zipball/v1.0.0",
+    "keywords": [
+        "key1",
+        "key2",
+        "key3"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/user/PLUGIN"
+    },
+    "bugs": {
+        "url": "https://github.com/user/PLUGIN/issues"
+    }
+}
