@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PLUGIN documentation (version x.xx)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <link href="syntaxhighlighter_3.0.83/styles/shCore.css"
+          rel="stylesheet" type="text/css"/>
+    <link href="syntaxhighlighter_3.0.83/styles/shThemeDefault.css"
+          rel="stylesheet" type="text/css"/>
+    <link href="index.css" rel="stylesheet" type="text/css"/>
+
+    <script src="syntaxhighlighter_3.0.83/scripts/shCore.js"
+            type="text/javascript"></script>
+    <script src="syntaxhighlighter_3.0.83/scripts/shBrushJScript.js"
+            type="text/javascript"></script>
+    <script src="syntaxhighlighter_3.0.83/scripts/shBrushXml.js"
+            type="text/javascript"></script>
+    <script src="syntaxhighlighter_3.0.83/scripts/shBrushCss.js"
+            type="text/javascript"></script>
+    <script src="syntaxhighlighter_3.0.83/scripts/shBrushPlain.js"
+            type="text/javascript"></script>
+    <script src="syntaxhighlighter_3.0.83/scripts/shAutoloader.js"
+            type="text/javascript"></script>
+
+    <script type="text/javascript">
+        SyntaxHighlighter.defaults['tab-size'] = 2;
+        SyntaxHighlighter.defaults['toolbar'] = false;
+        SyntaxHighlighter.all()
+    </script>
+
+</head>
+<body>
+
+<a href="https://github.com/pontikis/PLUGIN"><img
+        style="position: absolute; top: 0; right: 0; border: 0;"
+        src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"
+        alt="Fork me on GitHub"></a>
+
+<h1>PLUGIN documentation (vx.xx)</h1>
+
+<div class="level1">
+    <p>PLUGIN is ...
+
+    <p>Compatible with modern web browsers. Tested with: Google Chrome, Mozilla
+        Firefox, Microsoft Internet Explorer, (default) Android browser...
+
+    <p>Project page: <a href="#">PROJECT_PAGE</a>
+
+    <p>Copyright &copy; ... </p>
+
+    <p>License <a href="#">LICENSE</a>
+
+    <p>Requires
+    <ul>
+        <li><a href="http://jquery.com" target="_blank">jquery</a>
+    </ul>
+
+    <p>Tested with jquery >= ....
+
+    <p>UPCOMING Release x.xx (?? ?? ????) Download <a
+            href="#">here</a>
+
+    <p>CHANGELOG <a
+            href="#">here</a>
+
+    <p>DEMO <a href="#">DEMO</a>
+
+    <p>FORUM <a href="#">FORUM</a>
+
+    <p>
+        <small>Syntax highlight using <a
+                href="http://alexgorbatchev.com/SyntaxHighlighter/"
+                target="_blank">http://alexgorbatchev.com/SyntaxHighlighter/</a>
+        </small>
+
+</div>
+
+<!-- Docs ------------------------------------------------------------------ -->
+<h2>Documentation structure</h2>
+
+<div class="level2">
+    <p>Available documentation:</p>
+
+    <ul>
+        <li>Common documentation (current file)
+
+        <li><a href="../jsdoc/">JSDOC documentation</a>
+
+    </ul>
+</div>
+
+<!-- Features -------------------------------------------------------------- -->
+<h2>Features</h2>
+
+<div class="level2">
+    <ul>
+        <li>feature1 ...
+    </ul>
+</div>
+
+
+<!-- Usage ----------------------------------------------------------------- -->
+<h2>Usage</h2>
+
+<h3>HTML (head section)</h3>
+
+<div class="level3">
+    <pre class="brush: xml">
+    &lt;!--  if custom classes used -->
+    &lt;link rel="stylesheet" href="/path/to/custom.css">
+
+    &lt;script type="text/javascript" src="/path/to/jquery.js" type="text/javascript">&lt;/script>
+    &lt;script type="text/javascript" src="/path/to/jquery-ui.js" type="text/javascript">&lt;/script>
+
+    &lt;!--  if touch event support for touch devices is needed  -->
+    &lt;script src="/path/to/jquery.ui.touch-punch.min.js" type="text/javascript">&lt;/script>
+
+    &lt;script type="text/javascript" src="/path/to/jquery.PLUGIN.min.js" type="text/javascript">&lt;/script>
+    </pre>
+</div>
+
+<h3>JS code</h3>
+
+<div class="level3">
+    <pre class="brush: js">
+    $("#element_id").PLUGIN({
+
+    });
+    </pre>
+
+</div>
+
+<!-- Options --------------------------------------------------------------- -->
+<h2>Options</h2>
+
+<div class="level2">
+    <pre class="brush: js">
+    $("#element_id").PLUGIN({
+
+    });
+    </pre>
+
+</div>
+
+<!-- Methods --------------------------------------------------------------- -->
+<h2>Methods list</h2>
+
+<div class="level3" style="margin-top: 50px;">
+    <span style="background-color: #d9dbdc; padding: 5px; font-size: 140%;">COMMON</span>
+</div>
+
+<h3>getDefaults</h3>
+
+<div class="level3">
+    <pre class="brush: js">
+    $("#element_id").PLUGIN('getDefaults');
+    </pre>
+</div>
+
+
+<h3>getOption</h3>
+
+<div class="level3">
+    <pre class="brush: js">
+    $("#element_id").PLUGIN('getOption', 'option_name');
+    </pre>
+</div>
+
+
+<h3>getAllOptions</h3>
+
+<div class="level3">
+    <pre class="brush: js">
+    $("#element_id").PLUGIN('getAllOptions');
+    </pre>
+</div>
+
+
+<h3>setOption</h3>
+
+<div class="level3">
+    <pre class="brush: js">
+    $("#element_id").PLUGIN('setOption', 'option_name', option_value, reinit);
+    </pre>
+</div>
+
+<div class="level3">
+    <p>Alternative way to set one or more options
+</div>
+
+<div class="level3">
+    <pre class="brush: js">
+    $("#element_id").PLUGIN({option1_name: option1_value, etc});
+    </pre>
+</div>
+
+<h3>refresh</h3>
+
+<div class="level3">
+    <pre class="brush: js">
+    $("#element_id").PLUGIN('refresh');
+    </pre>
+</div>
+
+<h3>destroy</h3>
+
+<div class="level3">
+    <pre class="brush: js">
+    $("#element_id").PLUGIN('destroy');
+    </pre>
+</div>
+
+<div class="level3" style="margin-top: 50px;">
+    <span style="background-color: #d9dbdc; padding: 5px; font-size: 140%;">SPECIFIC</span>
+</div>
+
+<!-- Events ---------------------------------------------------------------- -->
+<h2>Events</h2>
+
+<h3>onSomething</h3>
+
+<div class="level3">
+    <pre class="brush: js">
+    $("#element_id").PLUGIN({
+        onSomething: function(event, data) {
+            // your code here e.g.
+        }
+    });
+    </pre>
+
+</div>
+
+
+
+<!-- Screenshots ----------------------------------------------------------- -->
+<h2>Screenshots</h2>
+
+<!--<div class="level2">
+    <img src="../demo/samples/v1.00/sample.png"
+         title="PLUGIN">
+</div>-->
+
+<br/><br/><br/>
+
+</body>
+</html>
