@@ -50,7 +50,7 @@
 
                 /**
                  * settings and defaults
-                 * using $.extend, settings modification will affect elem.data() and vive versa
+                 * using $.extend, settings modification will affect elem.data() and vice versa
                  */
                 var settings = elem.data(pluginName);
                 if(typeof(settings) == 'undefined') {
